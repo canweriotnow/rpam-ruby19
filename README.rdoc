@@ -1,6 +1,6 @@
 = Rpam 
 
-* http://rubyforge.org/projects/rpam
+* https://github.com/canweriotnow/rpam-ruby19
 
 == DESCRIPTION:
 
@@ -33,7 +33,7 @@ In a nutshell:
 
 == INSTALL:
 
-* gem install rpam (might need sudo privileges)
+* gem install rpam-ruby19 (might need sudo privileges)
 
 Or, you can do it the hard way (without Rubygems):
 
