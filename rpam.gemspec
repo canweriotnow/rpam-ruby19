@@ -5,8 +5,7 @@ Gem::Specification.new do |s|
   s.summary = %q{PAM integration with ruby.}
   s.require_paths = ["lib"]
   s.email = %q{andreoandre@gmail.com}
-  s.homepage = %q{https://github.com/canweriotnow/rpam}
-  s.rubyforge_project = %q{rpam}
+  s.homepage = %q{https://github.com/canweriotnow/rpam-ruby19}
   s.description = %q{This extension provides PAM  - Pluggable Authentication
   Modules - integration}
   s.required_ruby_version = Gem::Version::Requirement.new(">= 1.9.1")
