@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>File: README.rdoc [RDoc Documentation]</title>
+
+  <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet" />
+
+  <script src="./js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+</head>
+
+<body class="file">
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="./LICENSE.html">LICENSE</a></li>
+        
+          <li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+        
+          <li class="file"><a href="./ext/Rpam/Makefile.html">Makefile</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./Rpam.html">Rpam</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    
+<h1><a href="Rpam.html">Rpam</a> </h1>
+<ul><li>
+<p><a
+href="http://rubyforge.org/projects/rpam">rubyforge.org/projects/rpam</a></p>
+</li></ul>
+
+<h2>DESCRIPTION:</h2>
+
+<pre>This extension provides PAM (Pluggable Authentication Modules) integration.
+The library provides a stable API for applications to defer to for
+authentication tasks.</pre>
+
+<h2>FEATURES/PROBLEMS:</h2>
+<ul><li>
+<p>Not reported</p>
+</li></ul>
+
+<h2>SYNOPSIS:</h2>
+
+<p>In a nutshell:</p>
+
+<pre>require 'rpam'
+include Rpam
+
+if authpam(&quot;user&quot;,&quot;password&quot;) == true
+      puts &quot;Authenticate Successful&quot;
+else
+      puts &quot;Authenticate Failure&quot;
+end</pre>
+
+<h2>REQUIREMENTS:</h2>
+<ul><li>
+<p>pam-devel</p>
+</li><li>
+<p>ruby-devel</p>
+</li></ul>
+
+<h2>INSTALL:</h2>
+<ul><li>
+<p>gem install rpam (might need sudo privileges)</p>
+</li></ul>
+
+<p>Or, you can do it the hard way (without Rubygems):</p>
+<ul><li>
+<p>tar xzf rpam-*.tar.gz</p>
+</li><li>
+<p>cd rpam-*/ext</p>
+</li><li>
+<p>ruby extconf.rb</p>
+</li><li>
+<p>make</p>
+</li><li>
+<p>make install (might need sudo privileges)</p>
+</li></ul>
+
+<h2>LICENSE:</h2>
+
+<pre>This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+A full copy of the GNU license is provided in the file LICENSE.</pre>
+
+  </div>
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+</body>
+</html>
+
