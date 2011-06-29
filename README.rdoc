@@ -35,13 +35,6 @@ In a nutshell:
 
 * gem install rpam-ruby19 (might need sudo privileges)
 
-Or, you can do it the hard way (without Rubygems):
-
-* tar xzf rpam-*.tar.gz
-* cd rpam-*/ext
-* ruby extconf.rb
-* make
-* make install (might need sudo privileges)
 
 == LICENSE:
   This program is free software; you can redistribute it and/or modify
