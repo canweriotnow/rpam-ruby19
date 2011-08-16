@@ -19,4 +19,4 @@ have_func("pam_acct_mgmt")
 #have_func("pam_putenv")
 #have_func("pam_getenv")
 
-create_makefile("rpam")
+create_makefile("rpam_ext")

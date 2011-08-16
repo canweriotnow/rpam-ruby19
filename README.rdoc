@@ -14,7 +14,7 @@
 
 == SYNOPSIS:
 
-In a nutshell:
+In a nutshell (using the 'rpam' PAM service):
 
   require 'rpam'
   include Rpam
@@ -24,6 +24,10 @@ In a nutshell:
   else
   	puts "Authenticate Failure"
   end
+
+Or, to use a different PAM service:
+
+  if authpam("user", "password", :service => 'my_foo') == true
 
 == REQUIREMENTS:
 

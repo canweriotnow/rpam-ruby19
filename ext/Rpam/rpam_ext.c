@@ -26,12 +26,10 @@ typedef struct {
 	char *name, *pw;
 } pam_auth_t;
     
-static const char
-*rpam_servicename = "rpam";
-
 VALUE Rpam;
+VALUE Rpam_Ext;
 
-void Init_rpam();
+void Init_rpam_ext();
 
 /*
  * auth_pam_talker: supply authentication information to PAM when asked
@@ -89,14 +87,16 @@ int auth_pam_talker(int num_msg,
 }
 
 /* Authenticates a user and returns TRUE on success, FALSE on failure */
-VALUE method_authpam(VALUE self, VALUE username, VALUE password) {	
+VALUE method_authpam(VALUE self, VALUE username, VALUE password, VALUE servicename) {	
+	char* rpam_servicename;
     pam_auth_t userinfo = {NULL, NULL};
 	struct pam_conv conv_info = {&auth_pam_talker, (void *) &userinfo};
 	pam_handle_t *pamh = NULL;
 	int result;
 
-   	userinfo.name = StringValuePtr(username);
-	userinfo.pw =   StringValuePtr(password);
+	rpam_servicename = StringValuePtr(servicename);
+	userinfo.name =    StringValuePtr(username);
+	userinfo.pw =      StringValuePtr(password);
  
 	if ((result = pam_start(rpam_servicename, userinfo.name, &conv_info, &pamh)) 
             != PAM_SUCCESS) {
@@ -122,7 +122,8 @@ VALUE method_authpam(VALUE self, VALUE username, VALUE password) {
 }
 
 /* initialize */
-void Init_rpam() {
+void Init_rpam_ext() {
 	Rpam = rb_define_module("Rpam");
-	rb_define_method(Rpam, "authpam", method_authpam, 2);	
+	Rpam_Ext = rb_define_module_under(Rpam, "Ext");
+	rb_define_singleton_method(Rpam_Ext, "authpam", method_authpam, 3);
 }
