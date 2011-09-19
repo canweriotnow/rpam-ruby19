@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   Modules - integration}
   s.required_ruby_version = Gem::Version::Requirement.new(">= 1.9.1")
   s.extra_rdoc_files = ["README.rdoc"]
-  s.authors = ["Andre Osti de Moura", "Jason Lewis"]
+  s.authors = ["Andre Osti de Moura", "Jason Lewis", "Fred Emmott"]
   s.files = ["ext/Rpam/rpam_ext.c", "ext/Rpam/extconf.rb", "rpam.gemspec", "README.rdoc", "LICENSE", 'lib/rpam.rb']
   s.has_rdoc = true
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Rpam", "--main", "README.rdoc"]
