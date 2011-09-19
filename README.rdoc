@@ -14,16 +14,24 @@
 
 == SYNOPSIS:
 
-In a nutshell:
+In a nutshell (using the 'rpam' PAM service):
 
   require 'rpam'
-  include Rpam
 
-  if authpam("user","password") == true
-    puts "Authenticate Successful"
+  if Rpam.auth("user","password") == true
+	puts "Authenticate Successful"
   else
     puts "Authenticate Failure"
   end
+
+Or, to use a different PAM service:
+
+  if Rpam.auth("user", "password", :service => 'my_foo') == true
+
+This also supports compatibility with the original 'rpam':
+
+  include Rpam
+  if authpam("user","password") == true
 
 == REQUIREMENTS:
 
