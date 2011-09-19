@@ -20,9 +20,9 @@ In a nutshell:
   include Rpam
 
   if authpam("user","password") == true
-	puts "Authenticate Successful"
+    puts "Authenticate Successful"
   else
-  	puts "Authenticate Failure"
+    puts "Authenticate Failure"
   end
 
 == REQUIREMENTS:
