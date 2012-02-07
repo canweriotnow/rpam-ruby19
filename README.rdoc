@@ -4,13 +4,23 @@
 
 == DESCRIPTION:
 
-   This extension provides PAM (Pluggable Authentication Modules) integration.
-   The library provides a stable API for applications to defer to for
-   authentication tasks.
+This extension provides PAM (Pluggable Authentication Modules) integration.
+The library provides a stable API for applications to defer to for
+authentication tasks.
 
 == FEATURES/PROBLEMS:
 
-* Not reported 
+Users whould be aware that on systems using shadow passwords, authentication of 
+users other than the current user will fail unless either a) the authenticating 
+Ruby code is executed as root or, b) /sbin/unix_chkpwd is suid root (or sgid shadow).
+
+On some distros, this is the case by default; otherwise, it may be necessary to run:
+
+  sudo chmod 2755 /sbin/unix_chkpwd
+
+assuming /etc/shadow is set 0640 and owned by root:shadow, and /sbin/unix_chkpwd is owned
+by root:shadow.
+
 
 == SYNOPSIS:
 
