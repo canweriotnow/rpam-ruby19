@@ -45,9 +45,19 @@ This also supports compatibility with the original 'rpam':
 
 == REQUIREMENTS:
 
+On Red Hat/Fedora based systems:
 
-* pam-devel 
-* ruby-devel
+* yum install pam-devel 
+* yum install ruby-devel
+
+On Debian/Ubuntu based systems:
+
+* apt-get install libpam0g-dev
+* apt-get install ruby1.9-dev
+
+Note: If you're using rvm, the ruby development headers will be 
+installed in the correct rvm path by default, so don't worry about 
+the Ruby development libraries.
 
 == INSTALL:
 
