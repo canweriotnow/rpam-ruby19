@@ -2,6 +2,11 @@
 
 * https://github.com/canweriotnow/rpam-ruby19
 
+Looking for similar functionality in Clojure (very ealry alpha)?
+
+* https://github.com/canweriotnow/clj-pam
+
+
 == DESCRIPTION:
 
 This extension provides PAM (Pluggable Authentication Modules) integration.
