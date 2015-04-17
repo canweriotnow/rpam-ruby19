@@ -1,3 +1,5 @@
+== This gem is in need of a new maintainer. I'm not using it anymore so if you'd like to take it over, get in touch.
+
 = Rpam 
 
 * https://github.com/canweriotnow/rpam-ruby19
